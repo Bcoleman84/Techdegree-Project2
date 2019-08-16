@@ -1,99 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Red+Hat+Text%7CUbuntu&display=swap" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio Page Project</title>
-</head>
-<header>
+  </head>
+  <body>
+
+  <div class = "color">
+  <header class="clearfix">
+  <div class="clearfix" id="home">
+  <h1> Student Profile </h1>
+
   <nav>
-  <h1>Student Profile</h1>
   <ul>
-    <li><a href="#top">Home</a></li>
-    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#profile">Portfolio</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
   </nav>
-  <div class="bio">
-    <div class="wrapper primary ">
-      <img src="images/responsive-layout-profile.png" class="profile-img" alt="profile picture"/>
-    </div>
-    <div class="wrapper secondary">
-        <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end development at Treehouse and am excited to put all my skills to use!</p>
-    </div>
   </div>
-</header>
-<main>
-  
-  <section class="stack" id="portfolio">
 
-    <div class="title">
-        <h3>Portfolio</h3>
-    </div>
+  <div class="container clearfix">
+  <img src="images/responsive-layout-profile.png" class="top-col" alt="profile picture">
+  <p class="top-col"> Hi! I'm a front-end developer who loves responsive design and css. I recently finished learning front-end web development at Treehouse and am excited to put all my skills to use!</p>
+  </div>
+  </header>
+  </div>
+
+
+  <h3 class="title mid" id="profile">Portfolio</h3>
+
+  <div class="portfolio clearfix">
+  <div class="row-1">
+  <div class="col-1 primary col">
+  <img src="images/portfolio-1.png" alt="profile picture 1">
+  <h4> Marketing Page </h4>
+  <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+  </div>
+
+
+  <div class="col-2 secondary col">
+  <img src="images/portfolio-2.png" alt="profile picture 2">
+  <h4> Search Page </h4>
+  <p>This project searches through a specific database to find information that the user is trying to look up.</p>
+  </div>
+
+  <div class="col-1 terciary col">
+  <img src="images/portfolio-3.png" alt="profile picture 3">
+  <h4> Travel App </h4>
+  <p> This project compares travel times based on different transportation methods and tells you the best one.</p>
+  </div>
+  </div>
+
+  <div class="row-2">
+  <div class="col-2 primary col">
+  <img src="images/portfolio-4.png" alt="profile picture 4">
+  <h4> Map of Favorite Spots </h4>
+  <p> This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+  </div>
+
+  <div class="col-1 secondary col">
+  <img src="images/portfolio-5.png" alt="profile picture 5">
+  <h4> Photo Gallery </h4>
+  <p> This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos. </p>
+  </div>
+
+  <div class="col-2 terciary col">
+  <img src="images/portfolio-6.png" alt="profile picture 6">
+  <h4> Calculator </h4>
+  <p>Someone can enter in the numbers they want and press the big blue button and get the result.</p>
+  </div>
+  </div>
+  </div>
+
+  <section class="skills" id="skills">
+    <h2>Skills</h2>
+    <h3>Things I've learned</h3>
+    <ul>
+      <li>JavaScript</li>
+      <li>HTML/CSS</li>
+      <li>Python</li>
+      <li>PHP</li>
+    </ul>
+    </section>
+
+   <div class="contact" id="contact">
+   <h3> Contact </h3>
+   <p> If you're interested in chatting or want more information about what
+     I've been working on, I'd love to hear from you!<p>
       <br>
-    <div class="card">
-      <img src="images/portfolio-1.png" alt="Marketing Page"/>
-      <h2>Marketing Page</h2>
-      <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
-    </div>
-    <div class="card">
-      <img src="images/portfolio-2.png" alt="Search Page"/>
-      <h2>Search Page</h2>
-      <p>This project searches through a specific database to find information that the user is trying to look up.</p>
-    </div>
-    <div class="card">
-      <img src="images/portfolio-3.png" alt="Travel App"/>
-      <h2>Travel App</h2>
-      <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
-    </div>
-    <div class="card">
-      <img src="images/portfolio-4.png" alt="Map of Favorite Spots"/>
-      <h2>Map of Favorite Spots</h2>
-      <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
-    </div>
-    <div class="card">
-      <img src="images/portfolio-5.png" alt="Photo Gallery"/>
-      <h2>Photo Gallery</h2>
-      <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
-    </div>
-    <div class="card">
-      <img src="images/portfolio-6.png" alt="Calculator"/>
-      <h2>Calculator</h2>
-      <p>Someone can enter in the numbers they want and press the big blue button and get the result.</p>
-    </div>
-  </section>
-</main>
-<section id="skills">
-  <h2>Skills</h2>
-  <h3>Things I've learned</h3>
-  <ul>
-    <li>JavaScript</li>
-    <li>HTML/CSS</li>
-    <li>Python</li>
-    <li>PHP</li>
-  </ul>
-</section>
-<section id="contact">
-  <h3>Contact</h3>
-  <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-  <p>Phone <strong>+1 (111)123-1234</strong></p>
-  <p>Email <strong>email@yoursite.com</strong></p>
-</section>
-<hr>
-<footer>
-<h2> Student Name</h2>
-<h2 id="bottom"><a href="#top">Back To Top</a></h2>
-<ul class="b-nav">
-  <li><a href="#top">Home</a></li>
-  <li><a href="#portfolio">Portfolio</a></li>
-  <li><a href="#skills">Skills</a></li>
-  <li><a href="#contact">Contact</a></li>
-</ul>
-</footer>
-</body>
+      <p>Phone <strong>+1 (111)123-1234</strong></p>
+      <p>Email <strong>email@yoursite.com</strong></p>
+  </div>
+
+
+
+   <footer class="clearfix">
+     <p class="left">Student Name </p>
+    <ul>
+     <a href="#contact" class="right large">Contact</a>
+     <a href="#skills" class="right large">Skills</a>
+     <a href="#profile" class="right large">Portfolio</a>
+     <a href="#home" class="right large">Home</a>
+     <a href="#home" class="right small">Back To Top</a>
+    </ul>
+   </footer>
+  </div>
+
+  </body>
 </html>
